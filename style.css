@@ -24,9 +24,24 @@ p ~ ul {
           text-decoration: wavy;
 }
 
+.color_li {
+  color: darkslategray;
+  text-decoration: overline;
+}
+
 .pink:hover {
   text-decoration: underline;
   color: pink;
+}
+
+.par_1, .par1_2 {
+  border-top: darkred;
+  font-style: italic;
+  background-color: aliceblue;
+}
+
+.par1_2 {
+  text-decoration: underline;
 }
 
 p:last-child {
@@ -34,6 +49,6 @@ p:last-child {
 }
 
 p:last-child:hover {
-  background-color: darksalmon;
+  background-color: pink;
 }
 /*# sourceMappingURL=style.css.map */

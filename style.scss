@@ -16,6 +16,10 @@ $myViolet:rgb(166, 3, 248);
     color: darkgreen;
     text-decoration: wavy;
 }
+@mixin color_li {
+    color: darkslategray;
+    text-decoration: overline;
+}
 
 h1 {
     @include font1()
@@ -32,13 +36,25 @@ p:nth-child(2){
 p ~ ul{
     @include li_mixin()
   }
+.color_li {
+    @include color_li()
+}
 .pink:hover {
     text-decoration: underline;
     color: pink;
 }
+.par_1{
+    border-top: darkred;
+    font-style: italic;
+    background-color: aliceblue;
+  }
+  .par1_2{
+    @extend .par_1;
+    text-decoration: underline;
+  }
 p:last-child{
     border: 3px dashed rgb(247, 15, 54);
     &:hover {
-        background-color: darksalmon;
+        background-color: pink;
     }
 }
