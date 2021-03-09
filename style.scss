@@ -1,0 +1,44 @@
+$myViolet:rgb(166, 3, 248);
+@mixin font1{
+    font-size: 50px;
+    color: coral;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@mixin font2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+@mixin p_fon {
+    background-color: darkgrey;
+    color: aliceblue;
+}
+@mixin li_mixin{
+    color: darkgreen;
+    text-decoration: wavy;
+}
+
+h1 {
+    @include font1()
+}
+h3 {
+    color: $myViolet;
+}
+p {
+    @include font2()
+}
+p:nth-child(2){
+    @include p_fon()
+}
+p ~ ul{
+    @include li_mixin()
+  }
+.pink:hover {
+    text-decoration: underline;
+    color: pink;
+}
+p:last-child{
+    border: 3px dashed rgb(247, 15, 54);
+    &:hover {
+        background-color: darksalmon;
+    }
+}

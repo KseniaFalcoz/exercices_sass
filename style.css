@@ -1,0 +1,39 @@
+h1 {
+  font-size: 50px;
+  color: coral;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+  color: #a603f8;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+p:nth-child(2) {
+  background-color: darkgrey;
+  color: aliceblue;
+}
+
+p ~ ul {
+  color: darkgreen;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+.pink:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+p:last-child {
+  border: 3px dashed #f70f36;
+}
+
+p:last-child:hover {
+  background-color: darksalmon;
+}
+/*# sourceMappingURL=style.css.map */
