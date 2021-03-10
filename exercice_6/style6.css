@@ -1,0 +1,27 @@
+h3 {
+  color: orange;
+}
+
+p {
+  color: cadetblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.photo:visited {
+  background-image: url("drew-farwell-zNo9adZGR8c-unsplash.jpg");
+}
+
+a:hover {
+  color: yellowgreen;
+  font-size: 20px;
+}
+
+.photo {
+  background-image: url("drew-farwell-zNo9adZGR8c-unsplash.jpg");
+  background-size: cover;
+}
+/*# sourceMappingURL=style6.css.map */
