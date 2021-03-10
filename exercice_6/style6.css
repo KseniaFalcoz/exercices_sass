@@ -11,8 +11,8 @@ a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a.photo:visited {
-  background-image: url("drew-farwell-zNo9adZGR8c-unsplash.jpg");
+a:visited {
+  color: brown;
 }
 
 a:hover {

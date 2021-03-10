@@ -1,4 +1,5 @@
 $myOrange:orange;
+$myBrown:brown;
 @mixin font_p{
     color: cadetblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -15,12 +16,12 @@ p {
 }
 a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    &.photo:visited {
-        background-image:url("drew-farwell-zNo9adZGR8c-unsplash.jpg");
+    &:visited {
+        color: $myBrown;
     }
-}
-a:hover {
-    @include hover()
+    &:hover {
+        @include hover()
+    }
 }
 .photo {
     background-image:url("drew-farwell-zNo9adZGR8c-unsplash.jpg");
